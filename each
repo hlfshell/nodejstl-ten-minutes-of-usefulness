@@ -1,0 +1,13 @@
+const each = require('async').each;
+
+var users = []; //Assume this is an arr w/ users
+
+each(users, (user, done)=>{
+
+   email(user, "hello!", done);
+
+}, (err)=>{
+  console.log(err ? err : "Done!");
+});
+
+

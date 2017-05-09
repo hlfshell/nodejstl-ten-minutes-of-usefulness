@@ -1,0 +1,17 @@
+const waterfall = require('async');
+
+waterfall([
+
+   (done)=>{
+      //Do something
+      done();
+   },
+   (done)=>{
+     done(null, someValue, someOtherValue);
+   },
+   (someValue, someOtherValue, done)=>{
+      done(null, results);
+   }
+], (err, results)=>{
+
+});

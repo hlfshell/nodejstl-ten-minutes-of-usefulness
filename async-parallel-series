@@ -1,0 +1,25 @@
+const parallel = require('async').parallel;
+
+parallel([
+
+   (done)=>{
+	//thing the first
+   },
+
+   (done)=>{
+	//thing the second
+   },
+
+   (done)=>{
+	//thing the third
+   }
+
+
+], (err)=>{
+
+   console.log(err ? "Something went wrong: " + err : "Woo-hoo, all is done!");
+
+});
+
+
+

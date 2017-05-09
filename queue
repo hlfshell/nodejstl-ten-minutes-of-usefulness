@@ -1,0 +1,8 @@
+const queue = require('async').queue;
+
+var myQueue = queue((task, done)=>{
+   email(task.user, task.msg, done);
+});
+
+myQueue.push({ user: "kchester@gmail.com", msg: "<3" });
+

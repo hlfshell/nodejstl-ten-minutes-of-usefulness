@@ -1,0 +1,10 @@
+const debuglog = require('util').debuglog;
+
+const foolog = debuglog('foo');
+
+const barlog = debuglog('bar');
+
+
+foolog("Only when foo is active");
+
+barlog("Only when bar is active");
